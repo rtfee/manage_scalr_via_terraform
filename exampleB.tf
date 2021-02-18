@@ -6,7 +6,7 @@ resource "github_repository" "example2" {
 }
 
 resource "scalr_workspace" "example2" {
-  name           = "my-workspace-4"
+  name           = "my-workspace-2"
   environment_id = "org-ssccu6d5ch64lqg"
   vcs_provider_id = "vcs-shdp0gg2vksl5pg"
   vcs_repo {
