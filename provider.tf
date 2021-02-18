@@ -9,5 +9,5 @@ terraform {
 
 provider "github" {
   token        = var.git_token
-  organization = var.github_org
+  organization = "rtfee"
 }
