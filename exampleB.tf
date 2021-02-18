@@ -1,3 +1,10 @@
+resource "github_repository" "example" {
+  name        = "my_repo1"
+  description = "My awesome codebase"
+
+  private = true
+}
+
 resource "scalr_workspace" "example2" {
   name           = "my-workspace-2"
   environment_id = "org-ssccu6d5ch64lqg"
