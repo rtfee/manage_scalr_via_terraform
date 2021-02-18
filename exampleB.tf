@@ -1,4 +1,4 @@
-resource "github_repository" "example" {
+resource "github_repository" "example2" {
   name        = "my_repo1"
   description = "My awesome codebase"
 
@@ -6,8 +6,13 @@ resource "github_repository" "example" {
 }
 
 resource "scalr_workspace" "example2" {
-  name           = "my-workspace-2"
+  name           = "my-workspace-4"
   environment_id = "org-ssccu6d5ch64lqg"
+  vcs_provider_id = "vcs-shdp0gg2vksl5pg"
+  vcs_repo {
+    identifier = github_repository.example2.full_name
+    branch     = "main"
+  }
 }
 
 resource "scalr_variable" "example_secret2" {
