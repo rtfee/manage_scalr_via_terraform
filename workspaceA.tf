@@ -1,5 +1,5 @@
 resource "github_repository" "example" {
-  name        = "my_repo"
+  name        = "my_repo1"
   description = "My awesome codebase"
 
   private = true
