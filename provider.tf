@@ -11,3 +11,8 @@ provider "github" {
   token        = var.git_token
   organization = var.git_org
 }
+
+provider "scalr" {
+  token    = var.token_scalr
+  hostname = var.hostname_scalr
+}
